@@ -1,0 +1,16 @@
+{
+  "name": "webpackery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "node test.js && node test.bundle.js",
+    "pack": "./node_modules/.bin/webpack-cli --entry ./test.js --output test.bundle.js --libraryTarget umd --mode development"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.4"
+  }
+}
